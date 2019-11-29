@@ -1,0 +1,38 @@
+<LogoImgComp></LogoImgComp>
+<BsNavbar
+  @type="dark"
+  @backgroundColor="dark"
+  @collapsed={{true}}
+  @onCollapse={{action (mut collapsed) true}}
+  @onExpand={{action (mut collapsed) false}} as |navbar|>
+  <div class="navbar-header">
+    {{navbar.toggle}}
+  </div>
+  <navbar.content>
+    <navbar.nav as |nav|>
+      <nav.item>
+        <nav.link-to @route="root">Home</nav.link-to>
+      </nav.item>
+      <nav.item>
+        <nav.link-to @route="index">Java Data Structures & Abstractions</nav.link-to>
+      </nav.item>
+      <nav.item>
+        <nav.link-to @route="java-e-e">Jakarta Enterprise Edition</nav.link-to>
+      </nav.item>
+      <nav.item>
+        <nav.link-to @route="java-tools-tech">Java Tools & Technologies</nav.link-to>
+      </nav.item>
+      <nav.item>
+        <nav.link-to @route="index">UML & Patterns</nav.link-to>
+      </nav.item>
+    </navbar.nav>
+  </navbar.content>
+</BsNavbar>
+
+{{outlet}}
+
+<div id="" class="navbar navbar-fixed-bottom bg-dark text-white-50">
+  <div class="text-center">
+    <small>Copyright &copy; Vinoses </small>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<BsNav class="w-25"
+       @type="pills"
+       @justified={{false}}
+       @stacked={{true}}
+       @fill={{false}} as |nav|>
+  <nav.item>
+    <nav.link-to @route="root">Home</nav.link-to>
+  </nav.item>
+  <nav.item>
+    <nav.link-to @route="java-e-e">Jakarta</nav.link-to>
+  </nav.item>
+  <nav.item>
+    <nav.link-to @route="java-tools-tech">Tech</nav.link-to>
+  </nav.item>
+  <nav.item>
+    <nav.link-to @route="uml">UML</nav.link-to>
+  </nav.item>
+</BsNav>
+{{yield}}

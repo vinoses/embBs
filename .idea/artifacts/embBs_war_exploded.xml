@@ -1,0 +1,27 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="embBs:war exploded">
+    <output-path>$PROJECT_DIR$/target/embBs</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>embBs</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="embBs" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.webjars.bower:ember:2.10.0-beta.3" />
+          <element id="library" level="project" name="Maven: org.webjars.bower:jquery:3.4.1" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/target/embBs/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="embBs/web/Web" />
+    </root>
+  </artifact>
+</component>

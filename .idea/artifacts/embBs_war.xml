@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="embBs:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>embBs</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="embBs.war">
+      <element id="artifact" artifact-name="embBs:war exploded" />
+    </root>
+  </artifact>
+</component>
